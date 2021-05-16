@@ -9,7 +9,7 @@
 <body>
 <!-- redirect to home -->
 <% 
-    response.sendRedirect("home"); 
+    response.sendRedirect("book/home"); 
 %> 
 </body>
 </html>

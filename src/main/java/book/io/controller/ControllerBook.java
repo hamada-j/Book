@@ -11,7 +11,7 @@ public class ControllerBook {
 	@RequestMapping("/home")
 	public String listaClientes() {
 		
-		return "lista-clientes";
+		return "home";
 		
 	}
 
