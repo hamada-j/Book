@@ -33,10 +33,10 @@ public class TestConnectioDataBase extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		
-		 String JdbcURL = "";
-	     String user = "";
-	     String password = "";
+		 Secret secret = new Secret();
+		 String JdbcURL = secret.getJdbcURL();
+	     String user = secret.getUser();
+	     String password = secret.getPassword();
 	     
 	     //String driver = "com.mysql.cj.jdbc.Driver";
 	     String driver ="com.mysql.jdbc.Driver";
