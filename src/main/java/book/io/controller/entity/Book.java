@@ -17,6 +17,7 @@ public class Book {
 	private String genre;
 	@Column(name="year")
 	private int year;
+
 	
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="id", nullable = false)

@@ -39,7 +39,8 @@ public class ControllerAuthor {
 	
 	@PostMapping("/insertAuthor")
 	public String insertAuthor(@ModelAttribute("author") Author author) {
-		System.out.println("befor insert!");
+		
+		System.out.println(author);
 		authorDAO.addAuthor(author);
 		System.out.println("after insert!");
 		return "redirect:/author/home";
