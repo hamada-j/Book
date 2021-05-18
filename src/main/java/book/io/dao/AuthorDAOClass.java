@@ -30,7 +30,6 @@ public class AuthorDAOClass implements AuthorDAO {
 	@Override
 	@Transactional
 	public void addAuthor(Author author) {
-		// TODO Auto-generated method stub
 		Session session = sessionFactory.getCurrentSession();
 		session.saveOrUpdate(author);	
 	}
