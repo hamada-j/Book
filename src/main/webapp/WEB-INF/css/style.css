@@ -448,6 +448,7 @@ background-position: center center;
      float: left;
      position: relative;
      padding-top: 2px;
+     margin-left:-60px;
 }
 
 nav.main-menu {
@@ -1070,7 +1071,7 @@ ul.top_icon li a {
 }
 
 
-}
+
 .main-menu ul li:last-child a {
      padding-right: 0;
 }
@@ -1144,7 +1145,7 @@ ul.top_icon li a {
      display: inline-block;
      vertical-align: middle;
 }
-.main-menu ul>li:nth-child (6) {
+.main-menu ul>li:nth-child(6) {
      padding-right: 0px;
 }
 .nav>li {
@@ -2027,9 +2028,10 @@ right: 0px;
 bottom: -61px;;
 z-index: 9999;
 }
-.testomonial_img i img { border: #4bc714 solid 13px; width: 100%;}
+.testomonial_img i img { border: #4bc714 solid 13px; width: 100%;} 
+/** contact 
 transform: skew(190deg);
-
+**/
 .testimonial_cont h3 { color: #000; font-family: poppins;}
 
 

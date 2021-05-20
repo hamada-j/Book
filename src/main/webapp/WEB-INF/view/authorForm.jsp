@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Add Author</title>
-<style><%@include file="/WEB-INF/css/home.css"%></style>
+
 </head>
 <body>
 

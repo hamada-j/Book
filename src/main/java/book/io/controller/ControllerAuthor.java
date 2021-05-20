@@ -21,14 +21,6 @@ public class ControllerAuthor {
 	@Autowired
 	private AuthorDAO authorDAO;
 	
-	@RequestMapping("/home")
-	public String listaClientes() {
-		
-		return "home";
-		
-	}
-	
-	
 	@RequestMapping("/addAuthor")
 	public String showFormAddAuthor(Model model) {	
 		Author author = new Author();	
