@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Formulario</title>
-<style><%@include file="/WEB-INF/css/home.css"%></style>
+
 </head>
 <body>
 

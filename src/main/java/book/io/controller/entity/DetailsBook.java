@@ -35,7 +35,7 @@ public class DetailsBook {
 	@Override
 	public String toString() {
 		return "DetailsBook [id=" + id + ", image=" + image + ", rating=" + rating + ", price=" + price + ", synthesis="
-				+ synthesis + ", book=" + book + "]";
+				+ synthesis + "]";
 	}
 
 	public int getId() {
