@@ -80,13 +80,11 @@
                     <div class="limit-box">
                       <nav class="main-menu">
                         <ul class="menu-area-main">
-                          <li class="active"><a href="index.html">Home</a></li>
-                               <!-- end header inner 
-                               <li><button onclick="window.location.href='list'; return false;">Books</button></li>
-                               -->
+                           <li class="active"><a href="home">Home</a></li>
                           <li><a href="list">Books</a></li>
-                          <li><a href="#testimonial">Testimonial</a></li>
-                          <li><a href="#contact">Contact Us</a></li>
+                          <li><a href="#product">Authors</a></li>
+                          <li><a href="#testimonial">Bonus</a></li>
+                          <li><a href="#contact">Admin</a></li>
                         </ul>
                       </nav>
                     </div>
@@ -130,17 +128,16 @@
             />
             <div class="container">
               <div class="carousel-caption relative">
-                <h1>Moon</h1>
-                <span>FARMING COMPANY</span>
+                	 <h1>.</h1>
+                <span>.</span>
+                 <h1>.</h1>
+                <span>.</span>
+                 <h1>.</h1>
+                <span>.</span>
 
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi
-                </p>
-                <a class="buynow" href="#about">About us</a
-                ><a class="buynow ggg" href="#">Get a quote</a>
+   
+                <a class="buynow" href="list">Java Books</a
+                ><a class="buynow ggg" href="#">Others</a>
               </div>
             </div>
           </div>
@@ -152,39 +149,37 @@
             />
             <div class="container">
               <div class="carousel-caption relative">
-                <h1>Moon</h1>
-                <span>FARMING COMPANY</span>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi
-                </p>
-                <a class="buynow" href="#about">About us</a
-                ><a class="buynow ggg" href="#">Get a quote</a>
+              
+				 <h1>.</h1>
+                <span>.</span>
+                 <h1>.</h1>
+                <span>.</span>
+                 <h1>.</h1>
+                <span>.</span>
+                
+       
+                <a class="buynow" href="list">Java Books</a
+                ><a class="buynow ggg" href="#">Others</a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <img
               class="third-slide"
-              src="${ pageContext.request.contextPath }/resource/images/banner3.jpg"
+              src="${ pageContext.request.contextPath }/resource/images/banner5.jpg"
               alt="Third slide"
             />
             <div class="container">
               <div class="carousel-caption relative">
-                <h1>Moon</h1>
-                <span>FARMING COMPANY</span>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi
-                </p>
-                <a class="buynow" href="#about">About us</a
-                ><a class="buynow ggg" href="#">Get a quote</a>
+               	  <h1>.</h1>
+                <span>.</span>
+                 <h1>.</h1>
+                <span>.</span>
+                 <h1>.</h1>
+                <span>.</span>
+                
+                <a class="buynow" href="list">Java Books</a
+                ><a class="buynow ggg" href="#">Others</a>
               </div>
             </div>
           </div>

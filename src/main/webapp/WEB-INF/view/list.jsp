@@ -81,10 +81,10 @@
                       <nav class="main-menu">
                         <ul class="menu-area-main">
                           <li class="active"><a href="home">Home</a></li>
-                          <li><a href="#about">About</a></li>
-                          <li><a href="#product">Products</a></li>
-                          <li><a href="#testimonial">Testimonial</a></li>
-                          <li><a href="#contact">Contact Us</a></li>
+                          <li><a href="#about">Books</a></li>
+                          <li><a href="#product">Authors</a></li>
+                          <li><a href="#testimonial">Bonus</a></li>
+                          <li><a href="#contact">Admin</a></li>
                         </ul>
                       </nav>
                     </div>
@@ -144,7 +144,7 @@
                   <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 pa_right">
                       <div class="testomonial_img">
-                        <i><img src="images/tes.jpg" alt="#" /></i>
+                        <i><img src="${ pageContext.request.contextPath }/resource/images/tes.jpg" alt="#" /></i>
                       </div>
                     </div>
                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 pa_left">
@@ -155,13 +155,9 @@
                           >
                         </h3>
                         <p>
-                          <img src="icon/1.png" alt="#" />ipsum dolor sit amet,
-                          consectetur adipiscing elit, sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua. Ut enim
-                          ad minim veniam, quis nostrud exercitation ullamco
-                          laboris nisi ut aliquip ex ea commodo consequat. Duis
-                          aute irure dolor in reprehenderit in voluptate velit
-                          <img src="icon/2.png" alt="#" />
+                          <img src="${ pageContext.request.contextPath }/resource/icon/1.png" alt="#" />
+							${ bookTemp.getDetailsBook().getSynthesis() }
+                          <img src="${ pageContext.request.contextPath }/resource/icon/2.png" alt="#" />
                         </p>
                       </div>
                     </div>
