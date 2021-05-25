@@ -82,7 +82,7 @@
                         <ul class="menu-area-main">
                            <li class="active"><a href="home">Home</a></li>
                           <li><a href="list">Books</a></li>
-                          <li><a href="#product">Authors</a></li>
+                          <li><a href="author">Authors</a></li>
                           <li><a href="#testimonial">Bonus</a></li>
                           <li><a href="#contact">Admin</a></li>
                         </ul>

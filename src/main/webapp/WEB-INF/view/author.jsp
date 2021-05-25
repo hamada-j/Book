@@ -82,7 +82,7 @@
                         <ul class="menu-area-main">
                           <li class="active"><a href="home">Home</a></li>
                           <li><a href="#about">Books</a></li>
-                          <li><a href="author">Authors</a></li>
+                          <li><a href="#product">Authors</a></li>
                           <li><a href="#testimonial">Bonus</a></li>
                           <li><a href="#contact">Admin</a></li>
                         </ul>
@@ -135,12 +135,7 @@
           <!-- The slideshow -->
           <div class="carousel-inner">
           
-          <c:forEach var="bookTemp" items="${ books }">
-          
-          	<c:url var="linkActualizar" value="/book/download_book">
-          		<c:param name="id" value="${ bookTemp.id }"></c:param>			
-			</c:url>
-			
+          <c:forEach var="authorTemp" items="${ author }">
             <div class="carousel-item active">
               <div class="testomonial_section">
                 <div
@@ -155,18 +150,13 @@
                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 pa_left">
                       <div class="cross_inner">
                         <h3>
-                          ${ bookTemp.title }<br /><strong class="ornage_color"
-                            > ${ bookTemp.genre } / ${ bookTemp.year }</strong
-                          >
+                          ${ authorTemp.name }<br />
                         </h3>
                         <p>
                           <img src="${ pageContext.request.contextPath }/resource/icon/1.png" alt="#" />
-							${ bookTemp.getDetailsBook().getSynthesis() }
+							${ authorTemp.bio }
                           <img src="${ pageContext.request.contextPath }/resource/icon/2.png" alt="#" />
                         </p>
-                        <p> 
-                        <a class="buynow ggg" style="color: black !important;" href="${ linkActualizar }">Download</a>
-						</p>
                       </div>
                     </div>
                   </div>

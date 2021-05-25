@@ -1,6 +1,8 @@
 package book.io.controller;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,6 +22,17 @@ public class ControllerAuthor {
 	
 	@Autowired
 	private AuthorDAO authorDAO;
+	
+	@RequestMapping("/author")
+	public String listBooks(Model elModelo) {
+		
+		List <Author> allAuthor = authorDAO.getAllAuthor();
+			
+		elModelo.addAttribute("author", allAuthor);
+		
+		return "author";
+		
+	}
 	
 	@RequestMapping("/addAuthor")
 	public String showFormAddAuthor(Model model) {	

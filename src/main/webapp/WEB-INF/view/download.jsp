@@ -135,10 +135,7 @@
           <!-- The slideshow -->
           <div class="carousel-inner">
           
-          <c:forEach var="bookTemp" items="${ books }">
-          
-          	<c:url var="linkActualizar" value="/book/download_book">
-          		<c:param name="id" value="${ bookTemp.id }"></c:param>			
+          	<c:url var="linkActualizar" value="/book/download">		
 			</c:url>
 			
             <div class="carousel-item active">
@@ -173,7 +170,7 @@
                 </div>
               </div>
             </div>
-			</c:forEach>
+	
 
           </div>
         </div>
