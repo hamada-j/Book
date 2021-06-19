@@ -94,7 +94,7 @@ public class ControllerBook {
 	@RequestMapping(value = "/download", method = RequestMethod.GET)
 	public void downloader(HttpServletRequest request, HttpServletResponse response) {
 		
-		String name = Id + "test.pdf";
+		String name = Id + "pdf.pdf";
 		
 		System.out.println(name);
 

@@ -80,8 +80,8 @@
                     <div class="limit-box">
                       <nav class="main-menu">
                         <ul class="menu-area-main">
-                          <li class="active"><a href="home">Home</a></li>
-                          <li><a href="#about">Books</a></li>
+                           <li class="active"><a href="home">Home</a></li>
+                          <li><a href="list">Books</a></li>
                           <li><a href="author">Authors</a></li>
                           <li><a href="#testimonial">Bonus</a></li>
                           <li><a href="#contact">Admin</a></li>
@@ -149,26 +149,28 @@
                   <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 pa_right">
                       <div class="testomonial_img">
-                        <i><img src="${ pageContext.request.contextPath }/resource/images/tes.jpg" alt="#" /></i>
+                        <i><img src="${ pageContext.request.contextPath }/resource/images/${ bookTemp.getDetailsBook().getImage() }" alt="#" /></i>
                       </div>
                     </div>
                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 pa_left">
                       <div class="cross_inner">
                         <h3>
                           ${ bookTemp.title }<br /><strong class="ornage_color"
-                            > ${ bookTemp.genre } / ${ bookTemp.year }</strong
+                            > ${ bookTemp.genre } / ${ bookTemp.year } </strong
                           >
                         </h3>
                         <p>
                           <img src="${ pageContext.request.contextPath }/resource/icon/1.png" alt="#" />
-							${ bookTemp.getDetailsBook().getSynthesis() }
+							${ bookTemp.getDetailsBook().getSynthesis() }   <a class="buynow ggg" style="color: blue !important" href="${ linkActualizar }">more</a>
                           <img src="${ pageContext.request.contextPath }/resource/icon/2.png" alt="#" />
                         </p>
-                        <p> 
-                        <a class="buynow ggg" style="color: black !important;" href="${ linkActualizar }">Download</a>
+                                             <p style="background-color: white; margin: 100px !important"> 
+                        <a class="buynow ggg" style="color: black !important" href="${ linkActualizar }"></a>
 						</p>
                       </div>
-                    </div>
+                    </div  >
+                    
+                         
                   </div>
                 </div>
               </div>
@@ -197,26 +199,7 @@
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
               <div class="address">
-                <h3>Quick links</h3>
-                <ul class="Links_footer">
-                  <li>
-                    <img src="${ pageContext.request.contextPath }/resource/icon/3.png" alt="#" /> <a href="#"> Join Us</a>
-                  </li>
-                  <li>
-                    <img src="${ pageContext.request.contextPath }/resource/icon/3.png" alt="#" /> <a href="#">Maintenance</a>
-                  </li>
-                  <li>
-                    <img src="${ pageContext.request.contextPath }/resource/icon/3.png" alt="#" />
-                    <a href="#">Language Packs</a>
-                  </li>
-                  <li>
-                    <img src="${ pageContext.request.contextPath }/resource/icon/3.png" alt="#" /> <a href="#">LearnPress</a>
-                  </li>
-                  <li>
-                    <img src="${ pageContext.request.contextPath }/resource/icon/3.png" alt="#" />
-                    <a href="#">Release Status</a>
-                  </li>
-                </ul>
+         
               </div>
             </div>
 
@@ -224,8 +207,7 @@
               <div class="address">
                 <h3>Subcribe email</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do
+                 You can subscribe for the new books or suggest titles that you want to download.
                 </p>
                 <input
                   class="form-control"
@@ -243,16 +225,16 @@
 
                 <ul class="loca">
                   <li>
-                    <a href="#"><img src="${ pageContext.request.contextPath }/resource/icon/loc.png" alt="#" /></a>London 145
-                    <br />United Kingdom
+                    <a href="#"><img src="${ pageContext.request.contextPath }/resource/icon/loc.png" alt="#" /></a>Bir Mgrain
+                    <br />Western Sahara
                   </li>
                   <li>
                     <a href="#"><img src="${ pageContext.request.contextPath }/resource/icon/email.png" alt="#" /></a
-                    >demo@gmail.com
+                    >javabooksdownload@protonmail.com
                   </li>
                   <li>
                     <a href="#"><img src="${ pageContext.request.contextPath }/resource/icon/call.png" alt="#" /></a
-                    >+12586954775
+                    >
                   </li>
                 </ul>
               </div>
@@ -264,9 +246,7 @@
       <div class="copyright">
         <div class="container">
           <p>
-            © 2019 All Rights Reserved. Design By<a href="https://html.design/">
-              Free Html Templates</a
-            >
+            © 2020  Design By Hamada
           </p>
         </div>
       </div>
