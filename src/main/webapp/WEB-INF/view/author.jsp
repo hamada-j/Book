@@ -79,10 +79,10 @@
                   <div class="menu-area">
                     <div class="limit-box">
                       <nav class="main-menu">
-                        <ul class="menu-area-main">
-                          <li class="active"><a href="home">Home</a></li>
-                          <li><a href="#about">Books</a></li>
-                          <li><a href="#product">Authors</a></li>
+                     <ul class="menu-area-main">
+                           <li class="active"><a href="home">Home</a></li>
+                          <li><a href="list">Books</a></li>
+                          <li><a href="author">Authors</a></li>
                           <li><a href="#testimonial">Bonus</a></li>
                           <li><a href="#contact">Admin</a></li>
                         </ul>
@@ -144,7 +144,7 @@
                   <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 pa_right">
                       <div class="testomonial_img">
-                        <i><img src="${ pageContext.request.contextPath }/resource/images/author${ authorTemp.getId() }${ authorTemp.getId() }.jpeg" alt="#" /></i>
+                        <i><img style="margin-top: 20px" src="${ pageContext.request.contextPath }/resource/images/author${ authorTemp.getId() }${ authorTemp.getId() }.jpeg" alt="#" /></i>
                       </div>
                     </div>
                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 pa_left">
