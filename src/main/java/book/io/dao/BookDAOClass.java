@@ -35,18 +35,25 @@ public class BookDAOClass implements BookDAO {
 	}
 
 	@Override
+	@Transactional
 	public void updateBook(Book book, int idBook) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
+	@Transactional
 	public Book getBook(int idBook) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		Session session = sessionFactory.getCurrentSession();
+		
+		Book book = session.get(Book.class, idBook);
+		
+		return book;
 	}
 
 	@Override
+	@Transactional
 	public void deleteBook(int idBook) {
 		// TODO Auto-generated method stub
 		

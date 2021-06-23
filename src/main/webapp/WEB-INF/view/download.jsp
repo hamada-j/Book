@@ -108,100 +108,74 @@
       <!-- end header inner -->
     </header>
     <!-- end header -->
-    <section class="slider_section">
-      <div
-        id="myCarousel"
-        class="carousel slide banner-main"
-        data-ride="carousel"
-      >
-        <ul class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-        </ul>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="first-slide"
-              src="${ pageContext.request.contextPath }/resource/images/banner3.jpg"
-              alt="First slide"
-            />
-            <div class="container">
-              <div class="carousel-caption relative">
-                	 <h1>.</h1>
-                <span>.</span>
-                 <h1>.</h1>
-                <span>.</span>
-                 <h1>.</h1>
-                <span>.</span>
-
-   
-                <a class="buynow" href="list">Java Books</a
-                ><a class="buynow ggg" href="#">Others</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="second-slide"
-              src="${ pageContext.request.contextPath }/resource/images/banner4.jpg"
-              alt="Second slide"
-            />
-            <div class="container">
-              <div class="carousel-caption relative">
-              
-				 <h1>.</h1>
-                <span>.</span>
-                 <h1>.</h1>
-                <span>.</span>
-                 <h1>.</h1>
-                <span>.</span>
-                
-       
-                <a class="buynow" href="list">Java Books</a
-                ><a class="buynow ggg" href="#">Others</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="third-slide"
-              src="${ pageContext.request.contextPath }/resource/images/banner5.jpg"
-              alt="Third slide"
-            />
-            <div class="container">
-              <div class="carousel-caption relative">
-               	  <h1>.</h1>
-                <span>.</span>
-                 <h1>.</h1>
-                <span>.</span>
-                 <h1>.</h1>
-                <span>.</span>
-                
-                <a class="buynow" href="list">Java Books</a
-                ><a class="buynow ggg" href="#">Others</a>
-              </div>
+    
+ 
+        <!-- clients -->
+    <div id="testimonial" class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title">
+              <h2></h2>
             </div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#myCarousel"
-          role="button"
-          data-slide="prev"
-        >
-          <i class="fa fa-angle-left"></i>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#myCarousel"
-          role="button"
-          data-slide="next"
-        >
-          <i class="fa fa-angle-right"></i>
-        </a>
       </div>
-    </section>
+    </div>
+    
+    <div class="clients_red">
+      <div class="container">
+        <div
+          id="testimonial_slider"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <!-- Indicators -->
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+          
+          	<c:url var="linkActualizar" value="/book/download">		
+			</c:url>
+			
+            <div class="carousel-item active">
+              <div class="testomonial_section">
+                <div
+                  class="full testimonial_cont text_align_center cross_layout"
+                >
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 pa_right">
+                      <div class="testomonial_img">
+                        <i><img src="${ pageContext.request.contextPath }/resource/images/${ bookTemp.getDetailsBook().getImage() }" alt="#" /></i>
+                      </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 pa_left">
+                      <div class="cross_inner">
+                        <h3>
+                          ${ bookTemp.title }<br /><strong class="ornage_color"
+                            > ${ bookTemp.genre } / ${ bookTemp.year }</strong
+                          >
+                        </h3>
+                        <p>
+                          <img src="${ pageContext.request.contextPath }/resource/icon/1.png" alt="#" />
+							${ bookTemp.getDetailsBook().getSynthesis() }
+                          <img src="${ pageContext.request.contextPath }/resource/icon/2.png" alt="#" />
+                        </p>
+                        <p> 
+                        <a class="buynow ggg" style="color: blue !important;" href="${ linkActualizar }">Download</a>
+						</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+	
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- end contact -->
 

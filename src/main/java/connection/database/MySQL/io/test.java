@@ -31,29 +31,32 @@ public class test {
 					
 					// Insert
 					
-					//Author author = new Author("hibrane", "sql");
+					Author author = new Author("ISBN", "Overview Java SE with Hibernate or Spring");
 					
-					//Book book = new Book("sql new", "text", 1202);
+					Book book = new Book("Arquitectura Java Solida", "Arquitectura", 2012);
 					
-					//DetailsBook bookDetalles = new DetailsBook("fas", 25, 13,"prin");
+					DetailsBook bookDetalles = new DetailsBook("Arquitectura.jpeg", 9, 0,"The objective of this book is not to become experts in Hibernate or Spring but to be able to begin to handle each of these frameworks and acquire a global vision as architects of how to build a business application.");
 					
 					
 					// Asociar 
-					//book.setAuthor(author);
-					//book.setDetailsBook(bookDetalles);
+					book.setAuthor(author);
+					book.setDetailsBook(bookDetalles);
 					
 					// iniar trasaccion
 					
+					
+					miSession.save(author);
+					miSession.save(book);
 					miSession.beginTransaction();
 					
-					Query <Book> myQuery = miSession.createQuery("from Book", Book.class);
-					List<Book> books = myQuery.getResultList();
+					//Query <Book> myQuery = miSession.createQuery("from Book", Book.class);
+					//List<Book> books = myQuery.getResultList();
 					
-					System.out.println(books.size());
+					//System.out.println(books.size());
 					
-					for (Book unClima: books) {
-						System.out.println("Filtrados: \n" + unClima);
-					}
+					//for (Book unClima: books) {
+						//System.out.println("Filtrados: \n" + unClima);
+					//}
 					
 					//miSession.save(author);
 					//miSession.save(book);
